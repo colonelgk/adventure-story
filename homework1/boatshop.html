@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title> Lets go fishing! </title>
+	<link rel="icon" href="assets/trout.png" />
+	<link href='styles/styles.css' rel="stylesheet">
+</head>
+<body>     
+    <h1 class='intro'>Fishing Day  </h1>	
+	<h2 class='relax'>Check off your supply list </h2>
+	<img src="assets/baitshop.png"alt="Grab some bait" width="400" height="400">
+	<img src="assets/bait.png"alt="Grab some bait" width="400" height="400">
+	<img src="assets/store.png"alt="Grab some bait" width="400" height="400">
+	<form>
+	<div class='centerflex'>
+	  <input type="checkbox"><span> fishing rod</span>	  
+	  <input type="checkbox"><span> net        </span>	 
+	  <input type="checkbox"><span> bait       </span> 
+	  <input type="checkbox"><span> tackle box </span>
+	  <input type="checkbox"><span> hat       </span>	
+	  <input type="checkbox"><span> boat      </span>	 
+	  <input type="checkbox"><span> chair     </span>	 
+	  <input type="checkbox"><span> ice chest </span>	 
+	  <input type="checkbox"><span> sunscreen  </span>	 
+	  <input type="checkbox"><span> water      </span>	 
+	</div>
+	</form>
+    <div>
+	<button onclick='baitfood()'>Bait &#129424; <br> <i> 5 bait </i> </button>
+	<h3 style="color:yellow">Choose where you want to fish.  </h3>
+	
+	<ul>
+	<li> <a id='boat' href='boat.html?bt=5&fh=0'> I want to take a boat out </a> </li>	
+	<li> <a id='land' href='land.html?bt=5&fh=0'> I want to fish on land </a> </li>
+	</ul>
+	<a id='backtostart' href="index.html">	     
+         <h4> Exit back to start </h4> 
+       </a>
+
+    <iframe src='inventory.html' height=120 width=80></iframe>
+	<script>
+	inventory.src += location.search;
+	boat.href += location.search;
+	land.href += land.search;
+	boatshop.href += boatshop.search
+	
+	var queryString = new URLSearchParams(location.search);
+	var bt = +queryString.get('bt');
+	var fh = +queryString.get("fh");
+
+	function baitfood(){
+     queryString.set('bt',bait+5);	 
+    }	 
+	
+	</script>
+
+</body>
+<html>

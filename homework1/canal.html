@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title> Lets go fishing! </title>
+	<link rel="icon" href="assets/trout.png" />
+	<link href='styles/styles.css' rel="stylesheet">
+</head>
+<body>     
+    <h1 class='intro'> Fishing Day  </h1>
+	   <img id='canal' src="assets/canal.gif"width="500">
+	   <img id='canal' src="assets/canal2.gif"width="500">
+	   
+	   <p>	   
+	   <button id="button" onclick='fish()'>Cast line</button>
+	  
+	   </p> 
+	    <li> <a id='lake' href='lake.html'> Try the lake instead. </a> 	
+		<a id='backtostart' href="index.html">
+		</li>
+         <h4> Exit back to start </h4> 
+       </a> 
+    <iframe src='inventory.html' height=100 width=80></iframe>    
+	<script>
+			var number = Math.floor(Math.random() * 10);
+			function fish(){  
+
+				if(number<=5){
+				document.body.innerHTML = (
+				`<h1> </h1>
+				<h1 style="color:blue;">He got away.</h1>
+				<p>
+				<img src="assets/hook.png" height="500" width="500">
+				</p>
+				<audio autoplay loop>
+					<source src="assets/bad.mp3">					
+					</audio>
+				<ul>
+						<li> <a id='canal' href='canal.html' > Try again ?</a> </li>
+						<li> <a id='index' href='index.html' > Lets call it a day. </a> </li>
+					</ul>
+					<a id='backtostart' href="index.html">	     
+					<h4> Exit back to start </h4> 
+					</a>`
+				);
+				}
+				else{					
+				document.body.innerHTML = (					
+					`<div class="blink_me">Success.</div>
+					<div class="blink_me">You got one.</div>					
+					<img src="assets/trout.png" height="500" width="480">
+					<p style='color:yellow;'>What's next?</p>					
+					<audio autoplay loop>
+					<source src="assets/sucess.mp3">					
+					</audio>
+					<ul>
+						<li> <a id='canal' href='canal.html' > Cast again </a> </li>
+						<li> <a id='index' href='index.html' > Lets call it a day. </a> </li>
+					</ul>
+					<a id='backtostart' href="index.html">	     
+					<h4> Exit back to start </h4> 
+					</a>`
+					);
+				}		
+						
+			}			
+	</script>		
+	
+
+</body>
+<html>

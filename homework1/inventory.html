@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title> Lets go fishing! </title>
+	<link rel="icon" href="assets/trout.png" />
+	<link href='styles/styles.css' rel="stylesheet">
+</head>
+<body>     
+  Inventory: <hr>
+		<table>
+		<tr>
+			<th> &#128031; </th> 
+			<th> &#129424; </th> 			
+		</tr>
+		<tr>
+		    <td id='fh'>0</td>
+ 			<td id='bt'>0</td>			
+		</tr>
+		</table>
+
+	<script>
+	var queryString = new URLSearchParams(location.search);
+			fh.innerText = queryString.get("fh");
+			bt.innerText = queryString.get("bt");			
+	</script>
+
+</body>
+<html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title> Lets go fishing! </title>
+	<link rel="icon" href="assets/trout.png" />
+	<link href='styles/styles.css' rel="stylesheet">
+</head>
+<body>
+    <p class='intro'>You are in the Gulf   </p>
+	<p class='relax'>Beautiful day.</p>
+	<hr>	
+	<div class='picturecontainer'>	
+	<img src='assets/largegulf.jpg'>	
+	</div>
+	<p>
+	<button id="button" onclick='storm()'>Cast line</button>
+	</p>
+	<ul>
+			<li> <a id='lake' href='lake.html'> Try the lake instead. </a> </li>	
+			<li> <a id='land' href='land.html'> I'll try fishing off the land. </a> </li>
+			<li> <a id='index' href='index.html' > Lets call it a day. </a> </li>
+		</ul>
+	
+	 <a id='backtostart' href="index.html">	    
+         <h4> Exit back to start </h4> 
+       </a>
+	 <iframe src='inventory.html' height=100 width=80></iframe>
+	<script>
+	function storm(){
+				document.body.innerHTML = (
+					`<h1 style="color:red">Weather Alert</h1>
+					<h2  style="color:red">The storm is too dangerous . Turn back!</h2>
+					<img src="assets/storm.gif" width="1200" height="600"
+					>
+					<h3  style="color:yellow">Choose a new plan.</p>					
+					<audio autoplay loop>
+					<source src="assets/thunder.mp3">					
+					</audio>
+					<ul>
+						<li> <a id='lake' href='lake.html'> Try the lake instead. </a> </li>	
+						<li> <a id='land' href='land.html'> I'll try fishing off the land. </a> </li>
+						<li> <a id='index' href='index.html' > Lets call it a day. </a> </li>
+					</ul>	
+					<a id='backtostart' href="index.html">	    
+						<h4> Exit back to start </h4> 
+					</a>`
+					);
+			}
+	
+	</script>
+
+</body>
+<html>

@@ -1,0 +1,102 @@
+
+body {
+ background:
+        linear-gradient(yellow, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;	
+ 
+}
+.getstarted{
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';
+}	
+.intro{
+color:blue;
+font-weight:bold;
+font-family:'Ariel';
+font-size:35px;
+}
+.start{
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';
+font-size:28px;
+}
+.startbutton{
+color:blue;
+font-weight:bold;
+font-family:'Ariel';
+}
+.relax{	
+color:blue;
+font-weight:bold;
+font-family:'Ariel';
+}
+.clouds{
+	background-image:url('../assets/clouds.jpg');
+}
+#boat{
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';	
+}
+#land{
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';	
+}	
+#backtostart{
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';	
+}
+#gulf{	
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';	
+}
+#lake{
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';	
+}
+#index{	
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';	
+}
+#bridge{
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';	
+}	
+#canal{
+color:yellow;
+font-weight:bold;
+font-family:'Ariel';	
+}
+.centerflex{
+display:flex;
+justify-content:start;
+}
+.picturecontainer{
+width: auto;
+margin: auto;
+}
+.blink_me {
+color:blue;	
+animation: blinker 1s linear infinite;
+font-size:35px;
+font-weight:bold;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+#button{
+color:brown;
+}	

@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title> Lets go fishing! </title>
+	<link rel="icon" href="assets/trout.png" />
+	<link href='styles/styles.css' rel="stylesheet">
+</head>
+<body>     
+    <h1 class='intro'> Looks calm so far. </h1>
+	<h3 class='relax'> Let's give it a try </h3>
+	
+	<img src="assets/bridge.png" height="500" width="500">
+	<img src="assets/bridge2.png" height="500" width="500">
+	<img src="assets/rabbits.jpg" height="500" width="500">
+	<p>
+	<button id="button" onclick='flies()'>Cast line</button>
+	</p>
+	<ul>
+			<li> <a id='lake' href='lake.html'> Try the lake instead. </a> </li>	
+			<li> <a id='land' href='land.html'> I'll try fishing off the land. </a> </li>
+			<li> <a id='index' href='index.html' > Lets call it a day. </a> </li>
+		</ul>
+	
+	<a id='backtostart' href="index.html">	    
+         <h4> Exit back to start </h4> 
+       </a>
+	
+	
+	
+	
+	
+	 <iframe src='inventory.html' height=100 width=80></iframe>
+	<script>
+	function flies(){
+				document.body.innerHTML = (
+					`<h1 style="color:red">Insect Alert</h1>
+					<h2  style="color:red">Lots of flies around.</h2>
+					<img src="assets/flies.gif" height="550" width="850">
+					<p style="color:yellow">Make another choice.</p>					
+					<audio autoplay loop>
+					<source src="assets/buzz.mp3">					
+					</audio>
+					<ul>
+						<li> <a id='boat' href='boat.html'> I'll try and use a boat </a> </li>	
+						<li> <a id='canal' href='canal.html'> I'll try the canal. </a> </li>
+						<li> <a id='index' href='index.html' > Lets call it a day. </a> </li>
+					</ul>
+					<a id='backtostart' href="index.html">	    
+						<h4> Exit back to start </h4> 
+					</a>`
+					);
+			}
+	
+	</script>
+
+</body>
+<html
